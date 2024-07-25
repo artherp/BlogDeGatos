@@ -11,9 +11,9 @@ html, input {
 }
 
 :root {
-    --color-primary: #202024;
-    --title-primary: #065E7C;
-    --text-primary: #121214;
+    --color-primary: hsl(240, 6%, 13%);
+    --title-primary: hsl(195, 91%, 25%);
+    --text-primary: hsl(240, 5%, 7%);
     font-size: 62.5%;
 
     --text-sm: 1.4rem;
@@ -142,4 +142,65 @@ footer {
     padding-block: 2.4rem;
 
     margin-top: 4rem;
+}
+
+@media (width > 80rem) {
+    img {
+        border-radius: 5px;
+    }
+
+    #app {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+
+        gap: 4rem 3.2rem;
+    }
+
+    header .container,
+    .container {
+        max-width: initial;
+        padding: initial;
+        margin-inline: initial;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    header .container {
+        max-width: 121.6rem;
+        margin-inline: auto;
+    }
+
+    header form {
+        flex: 1;
+    }
+
+    header form input {
+        width: 100%;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    main.container {
+        max-width: 80rem;
+        margin-left: auto;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    aside.container {
+        max-width: 38.4rem;
+    }
+
+    footer {
+        grid-area: footer;
+    }
 }
