@@ -33,6 +33,12 @@ h3 {
 img {
     width: 100%;
     height: auto;
+    display: block;
+    transition: all 300ms;
+}
+
+img:hover {
+    scale: 1.03;
 }
 
 .text-sm {
@@ -202,5 +208,27 @@ footer {
 
     footer {
         grid-area: footer;
+    }
+}
+
+header {
+    animation: fromtop 600ms 400ms backwards;
+}
+
+main, aside {
+    animation: frombottom 800ms 100ms backwards;
+}
+
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes frombottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
     }
 }
