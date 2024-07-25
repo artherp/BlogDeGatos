@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html, input {
+    font: 400 var(--text-base)/160% "Mulish", sans-serif;
+    color: var(--text-primary)
+}
+
+:root {
+    --color-primary: #202024;
+    --title-primary: #065E7C;
+    --text-primary: #121214;
+    font-size: 62.5%;
+
+    --text-sm: 1.4rem;
+    --text-base: 1.6rem;
+}
+
+h1, h2, h3 {
+font-size: 2.4rem;
+color: var(--title-primary);
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+header {
+    background: var(--title-primary);
+    padding: 1.2rem 2.8rem;
+}
+
+header .container {
+    max-width: 37.4rem;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6rem;
+}
+
+header a {
+    line-height: 0;
+}
+
+header form input {
+    background: rgb(255 255 255 / 0.2);
+    border: none;
+    padding: 1.2rem 1.4rem;
+    border-radius: 0.4rem;
+
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+}
+
+header form input::placeholder {
+    color: white;
+}
