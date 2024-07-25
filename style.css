@@ -27,6 +27,7 @@ color: var(--color-primary);
 
 h3 {
     font-size: 1.8rem;
+    line-height: 100%;
 }
 
 img {
@@ -36,6 +37,12 @@ img {
 
 .text-sm {
     font-size: var(--text-sm);
+}
+
+.container {
+    padding-inline: 2rem;
+    max-width: calc(38.4rem + 4rem);
+    margin-inline: auto;
 }
 
 header {
@@ -79,9 +86,7 @@ header form input::placeholder {
 }
 
 main {
-    padding-inline: 2rem;
-    max-width: 38.2rem;
-    margin-inline: auto;
+    font-size: var(--text-base);
 }
 
 main h1 {
@@ -104,4 +109,37 @@ button {
 
 button:hover {
     transform: scale(1.1) rotate(10deg);
+}
+
+aside {
+    margin-top: 3.2rem;
+}
+
+aside section {
+    margin-top: 3.2rem;
+    display: grid;
+    gap: 3.2rem;
+}
+
+section article {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 1.6rem;
+}
+
+section article p {
+    margin-top: 1.2rem;
+}
+
+article img {
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--title-primary);
+    color: white;
+    text-align: center;
+    padding-block: 2.4rem;
+
+    margin-top: 4rem;
 }
